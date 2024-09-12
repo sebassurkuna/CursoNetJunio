@@ -1,0 +1,84 @@
+<div class="card">
+  <div class="card-header">
+    Marcas
+  </div>
+  <div class="card-body">
+    <ngx-datatable [rows]="brands" [count]="brands.length" default>
+      <ngx-datatable-column [name]="'ID'" prop="id">
+      </ngx-datatable-column>
+      <ngx-datatable-column [name]="'NOMBRE'" prop="name">
+      </ngx-datatable-column>
+    </ngx-datatable>
+    
+
+
+
+
+
+    <ng-container *ngIf="brands.length > 0 else noData">
+      <table>
+        <tr>
+          <th>Código</th>
+          <th>Descripción</th>
+          <th>Acciones</th>
+        </tr>
+        <tr *ngFor="let brand of brands">
+          <td>{{brand.id}}</td>
+          <td>{{brand.name}}</td>
+          <td>
+            <button type="button" class="btn btn-primary" (click)="editBrand(brand.id, content)">Editar</button>
+          </td>
+        </tr>
+      </table>
+    </ng-container>
+    
+  </div>
+</div>
+
+<ng-template #noData>No existen datos</ng-template>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Marca</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+    
+
+    <form id="brandForm" [formGroup]="formulario" (ngSubmit)="updateBrand(content)">
+      <div class="form-group">
+          <label for="id">Código:</label>
+          <input type="text" formControlName="id" id="id" class="form-control"/>
+          <div *ngIf="formulario.controls['id'].invalid && (formulario.controls['id'].dirty || formulario.controls['id'].touched)">
+              <small class="text-danger" *ngIf="formulario.controls['id'].errors?.['required']">
+                  El campo codigo es requerido
+              </small>
+              <small class="text-danger" *ngIf="formulario.controls['id'].errors?.['maxlength']">
+                  Longitud máxima: {{formulario.controls['id'].errors?.['maxlength'].requiredLength}}
+              </small>
+          </div>
+      </div>
+
+      <div class="form-group">
+          <label for="name">Descripción:</label>
+          <input type="text" formControlName="name" id="name" class="form-control"/>
+          <div *ngIf="formulario.controls['name'].invalid && (formulario.controls['name'].dirty || formulario.controls['name'].touched)">
+              <small class="text-danger" *ngIf="formulario.controls['name'].errors?.['required']">
+                  El campo codigo es requerido
+              </small>
+              <small class="text-danger" *ngIf="formulario.controls['name'].errors?.['pattern']">
+                  Solo se aceptan caracteres alfanumericos
+              </small>
+          </div>
+
+      </div>
+
+      <button class="btn btn-secondary" type="button" (click)="modal.close('Save click')">Cancelar</button>
+      <button class="btn btn-primary" type="submit">Enviar</button>
+  </form>
+
+  </div>
+  <!-- <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+  </div> -->
+</ng-template>

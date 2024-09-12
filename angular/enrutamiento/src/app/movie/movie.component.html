@@ -1,0 +1,9 @@
+<p>movie works!</p>
+
+<ul>
+    <li *ngFor="let movie of movies">
+        <!-- id: {{movie.id}} - título: {{movie.title}} - director: {{movie.director}} - año: {{movie.year}} -->
+        id: {{movie.id}} - título: {{movie.title}} - 
+        <a [routerLink]="['/pelicula-detalle/',movie.id]">Detalle</a>
+    </li>
+</ul>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cifLt+3YVhpj+mLZ1QyJMqlasWLrhEUDv6J+ndQ0uk1jGpMHRMMlFZZZYW7xN4tFkG5YMpJiDtYYIl85HsVZnw==",
+  "dgSpecHash": "RGakRJn1yGCiuoQD6yEDJKo23gQpYwEn20rk4zHLJSlWWX7fVhemZgPnxKfjiyFEc37byJ9/rcQNN9alZgkKhw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gaby\\source\\repos\\CursoNetJunio\\evaluacion-practica\\Gabriela Valladares\\Curso.Biblioteca\\Curso.Biblioteca.Aplicacion\\Curso.Biblioteca.Aplicacion.csproj",
+  "projectFilePath": "C:\\Users\\Gaby\\source\\repos\\CursoNetJunio\\evaluacion-practica\\Fase 2\\Gabriela Valladares\\Curso.Biblioteca\\Curso.Biblioteca.Aplicacion\\Curso.Biblioteca.Aplicacion.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gaby\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Gaby\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

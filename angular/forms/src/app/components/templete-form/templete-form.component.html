@@ -1,0 +1,24 @@
+<p>templete-form works!</p>
+
+<form (ngSubmit)="onSubmit(userForm)" #userForm="ngForm" novalidate>
+    <div>
+        <label for="code"> code:</label>
+        <input id="code" type="text" [(ngModel)]="brand.code" name="code" required #code="ngModel">
+        <div [hidden]="code.valid || code.pristine || submitted" style="color: red;">
+            <div *ngIf="code.errors && code.errors?.['required']">
+                Campo obligatorio
+            </div>
+        </div>
+    </div>
+    <div>
+        <label for="description"> description:</label>
+        <input id="description" type="text" [(ngModel)]="brand.description" name="description" required #description="ngModel">
+        <div [hidden]="description.valid || description.pristine || submitted" style="color: red;">
+            <div *ngIf="description.errors && description.errors?.['required']">
+                Campo obligatorio
+            </div>
+        </div>
+    </div>
+    
+    <button type="submit">Enviar</button>
+</form>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PlJj1T7/lxJLbFoot2kmxV4fZwDT/SxGliHE0bg5TE3KOY6UUefiJnc1B9XkK6kX4xRO4T5ejO3hzMO69h4aUw==",
+  "dgSpecHash": "SWo3QfVmk/pkcAXEwPTCoE3qUIKiQlqyaCB8BMqh0tn7kXJCONr+MiLJJqKABx3B851A3gK2ealNjng9LCneig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gaby\\source\\repos\\CursoNetJunio\\evaluacion-practica\\Gabriela Valladares\\Curso.Biblioteca\\Curso.Biblioteca.WebApi\\Curso.Biblioteca.WebApi.csproj",
+  "projectFilePath": "C:\\Users\\Gaby\\source\\repos\\CursoNetJunio\\evaluacion-practica\\Fase 2\\Gabriela Valladares\\Curso.Biblioteca\\Curso.Biblioteca.WebApi\\Curso.Biblioteca.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gaby\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Gaby\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

@@ -1,0 +1,394 @@
+{
+	"info": {
+		"_postman_id": "c721f286-2ef8-43c2-88f3-b04c2974b037",
+		"name": "BibliotecaAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9722805"
+	},
+	"item": [
+		{
+			"name": "Autor",
+			"item": [
+				{
+					"name": "GetAutors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7030/api/Autor",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7030",
+							"path": [
+								"api",
+								"Autor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAutorById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7030/api/Autor/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7030",
+							"path": [
+								"api",
+								"Autor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostAutor",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Evelin\",\r\n  \"apellido\": \"Medina\"\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:7030/api/Autor",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7030",
+							"path": [
+								"api",
+								"Autor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateAutor",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Dani\",\r\n  \"apellido\": \"Delgado\"\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:7030/api/Autor/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7030",
+							"path": [
+								"api",
+								"Autor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteAutor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7030/api/Autor/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7030",
+							"path": [
+								"api",
+								"Autor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Editorial",
+			"item": [
+				{
+					"name": "GetEditorials",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7030/api/Editorial",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7030",
+							"path": [
+								"api",
+								"Editorial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEditorialById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7030/api/Editorial/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7030",
+							"path": [
+								"api",
+								"Editorial",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostEditorial",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Libreria BD\",\r\n  \"direccion\": \"Quito Ecuador\"\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:7030/api/Editorial",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7030",
+							"path": [
+								"api",
+								"Editorial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateEditorial",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Libreria BB\",\r\n  \"direccion\": \"Quito Ecuador\"\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:7030/api/Editorial/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7030",
+							"path": [
+								"api",
+								"Editorial",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteEditorial",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7030/api/Editorial/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7030",
+							"path": [
+								"api",
+								"Editorial",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Libro",
+			"item": [
+				{
+					"name": "GetLibros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7030/api/Libro",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7030",
+							"path": [
+								"api",
+								"Libro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetLibroById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7030/api/Libro/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7030",
+							"path": [
+								"api",
+								"Libro",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostLibro",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"titulo\": \"Caperucita Roja\",\r\n  \"isbn\": \"1234\",\r\n  \"autorId\": 1,\r\n  \"editorialId\": 1\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:7030/api/Libro",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7030",
+							"path": [
+								"api",
+								"Libro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateLibro",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"titulo\": \"Caperucita\",\r\n  \"isbn\": \"1234\",\r\n  \"autorId\": 2,\r\n  \"editorialId\": 2\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:7030/api/Libro/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7030",
+							"path": [
+								"api",
+								"Libro",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteLibro",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7030/api/Libro/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7030",
+							"path": [
+								"api",
+								"Libro",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
